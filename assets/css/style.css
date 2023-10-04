@@ -16,6 +16,9 @@
     padding: 10px;
     border-radius: 4px;
   }
+  .absoluto{
+    position: absolute;
+  }
  .introImg{
    width: 500%;
  }
@@ -267,7 +270,12 @@
       bottom: 10%;
     }
 }
-
+html, body, .container-fluid {
+  
+  max-height: 100%;
+  scrollbar-color: red;
+  min-width: 100%; overflow-y:hidden;
+}
 /* IPHONE */
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
