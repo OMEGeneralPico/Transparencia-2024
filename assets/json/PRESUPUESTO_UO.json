@@ -1,0 +1,78 @@
+{
+  "CONCEJO DELIBERANTE": {
+   "Concejo deliberante": 107627639
+
+
+  },
+  "INTEDENCIA": {
+   "Asuntos legales":  23030899,
+   "Comunicaciones": 18062379,
+   "Tecnol.de la inf.": 24966720,
+   "Articulación": 2758497,
+   "Intendencia": 18044479,
+   "Juzgado de faltas": 22076174,
+   "Protocolo y ceremonial": 8812382
+
+   
+  },
+  "GOBIERNO": {
+   "Educac.y cultura": 48307612,
+   "Choferes": 22439759,
+   "Gobierno seg.educ.y cultura": 39251316,
+   "Prevención": 102029123,
+   "RRHH": 35139628,
+   "Rel. institucionales": 59762986,
+   "Turismo": 8668494
+
+   
+  },
+  "PLANIFICACION": {
+   "Diseño y planific.": 5190806,
+   "Infraestructura": 100906355,
+   "Obras particulares": 21574359,
+   "Planeam.y catastro": 6292061,
+   "Planif.y gestión urbana": 81397203,
+   "Planeam. y catastro" : 6292061
+   
+   
+  },
+  "ESPACIOS PUBLICOS": {
+   "Ambiente y des.sustentable": 0,
+   "Espacios públicos": 0,
+   "Gestión ambiental": 0,
+   "R.R.U": 0,
+   "Sec.de amb. y serv.pub.": 0,
+   "Servicios públicos": 0,
+   "Zoonosis y vectores": 0
+  },
+  "DESARROLLO SOCIAL": {
+   "Ctos. des. infantil": 0,
+   "Deportes": 0,
+   "Dir.de familia": 0,
+   "Dirección de juventud": 0,
+   "Nuevas economías": 0,
+   "Políticas de género": 0,
+   "Desarrollo social": 0,
+   "Servicio soc.de base": 0,
+   "Unidad de niñez":0
+   
+  },
+  "ECONOMIA": {
+   "Contaduría": 27927376,
+   "Des.Econom.": 34752758,
+   "Control comerc.": 35118314,
+   "Rentas": 36164761,
+   "Eeconomía": 9035542,
+   "Tesorería": 23871523
+   
+  },
+  "ORGANISMOS DESCENTRALIZADOS": {
+   "Caminos vecinales": 6440364,
+   "Planta de asfalto": 158384825
+   
+  },
+  "NO PROGRAMATICO": {
+   "Partidas no programáticas": 75185870
+
+  }
+}
