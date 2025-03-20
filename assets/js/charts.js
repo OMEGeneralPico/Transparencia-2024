@@ -334,7 +334,7 @@ var inViewayudas = false;
 
 function animarAyuda() {
     for (var i = 0; i < 1; i++) {
-        var idElement = "intervencionViolencia";
+        var idElement = "ayudaseconomicas";
         if (isScrolledIntoView('#' + idElement)) {
             if (chartsayudas[idElement]) { continue }
             chartsayudas[idElement] = true;
@@ -344,69 +344,106 @@ function animarAyuda() {
             if (inViewayudas) { return; }
             inViewayudas = true;
             return myChart = new Chart(ctx, {
-                type: 'doughnut',
+                type: 'bar',
                 data: {
-                   
                     /* labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'], */
-                    labels: ['Reincidencia de Casos', 'Derivacion de Instituciones Comunidad', 'Fiscalias de Genero y O.A.V.y.T', 'Demandas Espontaneas', 'Defensoria Civil y Casos de Familia',"Unidad Local y derivacion interna Desarrollo Social"],
+                    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
                     datasets: [
                         {
-                            label: 'Niños y niñas',
-                            tension: 0.1,
+                            label: 'Alquiler',
+                            tension: 0.2,
                             fill: false,
 
-                            data: [23,4,13,3,110,10],
+                            data: [475000, 374500, 454000, 710500, 702000, 816000],
                             borderColor: [
 
                                 'rgba(105, 190, 190, 1)'
                             ],
-                            backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)'],
+                            backgroundColor: [
+
+                                'rgba(105, 190, 190, 0.2)'
+                            ],
                             borderWidth: 1
                         },
-                     
+                        {
+                            label: 'Enfermedad',
+                            tension: 0.2,
+                            fill: false,
+
+                            data: [76000, 64500, 85000, 112000, 201500, 164500],
+                            borderColor: [
+
+                                'rgba(71, 123, 168, 1)'
+                            ],
+                            backgroundColor: [
+
+                                'rgba(71, 123, 168, 0.2)'
+                            ],
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Hogar',
+                            tension: 0.2,
+                            fill: false,
+                            borderWidth: 1,
+                            data: [655600, 562200, 557300, 1881890, 1897600, 2017000],
+                            borderColor: [
+
+                                'rgba(215, 90, 218, 1)'
+                            ],
+                            backgroundColor: [
+
+                                'rgba(35, 145, 200, 0.2)'
+                            ],
+                        },
                     ]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: {
-                     
-                     
-                        datalabels: {
-                          display: 'auto',
-                          formatter: function (value) {
-                            return  Math.round((value*10))/10 + '%';
-                          },
-                          color: 'black',
-                          font: {
-                             
-                           
-                            family: 'Raleway'
-                          }
+                    scales: {
+                        x: {
+                            ticks: {
+                                font: { family: 'Raleway' }
+                            },
+                            stacked: true
                         },
-                      
-                      title: {
-                        display: true,
-                        text: 'Casos Enero-Junio 2023',
-              
-                        align: 'start',
-                        font: {
-                          family: 'Titillium Web',
-                          size: 20,
-                        },
-                        padding: {
-                          top: 10,
-                          bottom: 30,
-                        },
-                      },
-                      legend: {
+                        y: {
+                            ticks: {
+                                font: { family: 'Raleway' },
+                                maxTicksLimit: 5,
+                            },
+                            stacked: true,
+                            font: {
+                                family: 'Titillium Web'
+                            },
+                        }
+                    },
+                    legend: {
                         display: true,
                         position: 'right',
                         align: 'middle',
-                        labels: { font: { family: 'Raleway' } }
-                      }
+                        labels: { font: { family: 'Raleway' } },
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    family: 'Raleway'
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Subsidios a personas por concepto ($)',
+                            align: 'start',
+                            font: {
+                                family: 'Titillium Web',
+                                size: 20,
+                            },
+                        }
                     }
-                  }
+                }
             });
 
         } else {
@@ -456,10 +493,10 @@ function animarAmbiente() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Quirofano Movil', 'Refugio Canino', 'Colegio Veterinario'],
+                    labels: ['Carton y Papeles', 'Plastico', 'Vidrio', 'Metales', 'Chatarra'],
                     datasets: [
                         {
-                            data: [366, 376, 1332],
+                            data: [36240, 12626, 67498, 1382, 11620],
                             borderColor: [
 
                                 'rgba(105, 190, 190, 1)',
@@ -510,7 +547,7 @@ function animarAmbiente() {
                         legend: false,
                         title: {
                             display: true,
-                            text: 'Castraciones Realizadas',
+                            text: 'Material recuperado (kgs.)',
                             align: 'start',
                             font: {
                                 family: 'Titillium Web',
@@ -1035,10 +1072,10 @@ function animarambientezoo() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Enero ', 'Febrero ', 'Marzo ','Abril', 'Mayo', 'Junio'],
+                    labels: ['Castraciones ', 'Vacunaciones ', 'Desinfecciónes '],
                     datasets: [
                         {
-                            data: [533, 400, 420,697,468,400],
+                            data: [1436, 3755, 62],
                             borderColor: [
 
                                 'rgba(105, 190, 190, 1)',
@@ -1074,7 +1111,7 @@ function animarambientezoo() {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Cuadras que recibieron mantenimiento',
+                            text: 'Actividades de zoonosis',
                             align: 'start',
                             font: {
                                 family: 'Titillium Web',
@@ -1211,7 +1248,7 @@ var inviewmicro = false;
 
 function animarmicro() {
     for (var i = 0; i < 1; i++) {
-        var idElement = "violenciaDesarrollo";
+        var idElement = "desarrollomicro";
         if (isScrolledIntoView('#' + idElement)) {
             if (chartmicro[idElement]) { continue }
             chartmicro[idElement] = true;
@@ -1221,7 +1258,7 @@ function animarmicro() {
             if (inviewmicro) { return; }
             inviewmicro = true;
             return new Chart(ctx, {
-                type: 'doughnut',
+                type: 'bar',
                 data: {
 
                     labels: ['Entrevistas', 'Evaluaciones', 'Seguimiento'],

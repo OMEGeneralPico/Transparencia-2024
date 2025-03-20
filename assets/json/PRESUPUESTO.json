@@ -29,18 +29,18 @@
       "Trabajos públicos": 56.28
    },
    "ESPACIOS PUBLICOS": {
-      "Bienes de capital": 25.0,
-      "Bienes de consumo": 25.0,
-      "Gasto en personal": 25.0,
-      "Ser. no personales": 25.0
+      "Bienes de capital": 1.25,
+      "Bienes de consumo": 12.04,
+      "Gasto en personal": 67.27,
+      "Ser. no personales": 119.44
    },
    "DESARROLLO SOCIAL": {
-      "Bienes de capital": 16.6,
-      "Bienes de consumo": 16.6,
-      "Gasto en personal":16.6,
-      "Ser. no personales": 16.6,
-      "Transf. sociales":16.6,
-      "Prestamos":16.6
+      "Bienes de capital": 0.54,
+      "Bienes de consumo": 7.66,
+      "Gasto en personal": 51.06,
+      "Ser. no personales": 21.47,
+      "Transf. sociales": 19.02,
+      "Prestamos": 0.25
    },
    "ECONOMIA": {
       "Bienes de capital": 1.13,
